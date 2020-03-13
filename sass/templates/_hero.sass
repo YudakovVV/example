@@ -9,11 +9,19 @@
   background-size: cover  
   height: 100vh
   color: $light
+  &::before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.7)  
   &__content
+    position: relative
     max-width: 670px
   &__text
     font-size: 22px
     max-width: 500px
+    font-weight: 100
   &__button
     margin-right: 20px
   &__instagram
@@ -35,23 +43,42 @@
     text-transform: uppercase
     text-decoration: none
     color: $light
+    &::after
+      content: ''
+      background: url("../img/arrow-down.svg") no-repeat center
+      width: 30px
+      height: 30px
+      border: 2px solid $primary
+      border-radius: 50%
+      margin-left: 12px
+
 .instagram
   display: flex
   justify-content: center
   align-items: center
   background-color: $dark
   
-  &__link    
+  &__link  
+    display: flex 
+    align-items: center 
     text-transform: uppercase
     color: $primary
     text-decoration: none
     transform: rotate(90deg)
+    line-height: 0.8
+    &::after
+      content: ''
+      width: 50px
+      height: 1px
+      background-color: $primary
+      margin-left: 8px
 
 .title
   margin: 0
   font-family: 'Yeseva One', cursive
   text-transform: uppercase
   font-size: 40px
+  font-weight: 100
   &--primary
     color: $primary
 
