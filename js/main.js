@@ -1,4 +1,4 @@
-
+/*
 document.addEventListener("DOMContentLoaded", function(event) { 
   const modal = document.querySelector('.modal');
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
@@ -10,8 +10,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
   modalBtn.forEach(element => {
     element.addEventListener('click', switchModal);
   });  
-  closeBtn.addEventListener('click', switchModal);
- 
-  
+  closeBtn.addEventListener('click', switchModal); 
+  escBtn.addEventListener('keydown', function (event) {
+  if(event.keyCode === 27) escBtn.getElementById('modal_id', switchModal).hidden= 1;
 });
+
+});
+*/
+
+$(document).ready(function () {
+  var modal = $('.modal'),
+      modalBtn = $('[data-toggle="modal"]'),
+      closeBtn = $('.modal__close'); 
+
+    modalBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
+  });
+  closeBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
+  });
+})
 
