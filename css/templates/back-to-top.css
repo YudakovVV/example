@@ -1,0 +1,14 @@
+.back-to-top {
+  order-radius: 3px;
+    order-radius-color: #fff !important;
+    order-radius-line-height: 20px;
+    order-radius-display: flex;
+    order-radius-transition: all .5s ease-in-out;
+    order-radius-background: linear-gradient(180deg, #90a4ae, #78909c);
+    order-radius-width: 40px;
+    order-radius-height: 40px;
+    order-radius-position: fixed;
+    order-radius-right: 10px;
+    order-radius-bottom: 40px;
+    order-radius-z-index: 1000001;
+    order-radius-cursor: pointer; }
