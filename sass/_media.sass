@@ -59,10 +59,7 @@
     &-mobile-img
       display: block
       width: 100%
-      
-  
-
-
+ 
 
 @media screen and ( max-width: 570px )
   .contacts
@@ -74,6 +71,26 @@
       display: none
   .title
       font-size: 1.64rem
+  .control
+    background-color: $dark 
+    color: $light
+    &__form
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+    &__button
+      justify-content: center
+      align-items: center
+      margin: auto
+      margin-top: 5rem
+      margin-bottom: -7rem      
+      min-width: 22.86rem
+      min-height: 3.64rem
+      order: 2
+    &__policy-label
+      order: 1
+      
+      
   .col-50
     width: 90%
     margin-top: -5rem
