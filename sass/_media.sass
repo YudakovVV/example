@@ -1,3 +1,6 @@
+.swiper
+  &-mobile-img
+    display: none
 @media screen and ( max-width: 1248px)
   html
     font-size: 12px
@@ -18,12 +21,14 @@
     &__instagram
       display: none
     &__content
-      margin-left: 0 
+      margin-left: 0   
+    
       
 @media screen and ( max-width: 760px )
+
   .row
     flex-direction: column
-    align-items: center
+    align-items: center    
   .types
     &__card
       margin-bottom: 5rem
@@ -38,6 +43,26 @@
   .card
     &__text
       margin-left: 0
+  .col-50
+    width: 90%
+    margin-top: -3rem
+  .swiper-container
+    margin-bottom: 2rem
+    &__bottom
+      margin-top: 8rem
+  .section-title__word
+    &::after
+      display: none
+  .swiper
+    &-main-img
+      display: none
+    &-mobile-img
+      display: block
+      width: 100%
+      
+  
+
+
 
 @media screen and ( max-width: 570px )
   .contacts
@@ -49,6 +74,17 @@
       display: none
   .title
       font-size: 1.64rem
+  .col-50
+    width: 90%
+    margin-top: -5rem
+  .swiper
+    &-slide 
+      
+  .swiper-container
+    margin-bottom: 2rem     
+  .section-title__word
+    &::after
+      display: none     
   .hero
     &__scroll-down
       display: none
@@ -60,7 +96,7 @@
     &__button
       display: block
       min-width: 22.86rem
-      margin-bottom: 1.85rem
+      margin-bottom: 1.85rem 
 @media screen and ( max-height: 520px )
   .hero
     &__scroll-down

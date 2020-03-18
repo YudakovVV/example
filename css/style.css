@@ -827,6 +827,9 @@ img {
   font-style: italic;
   color: #96a2a7; }
 
+.swiper-mobile-img {
+  display: none; }
+
 @media screen and (max-width: 1248px) {
   html {
     font-size: 12px; }
@@ -862,7 +865,21 @@ img {
     .design__card {
       margin-bottom: 5rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .col-50 {
+    width: 90%;
+    margin-top: -3rem; }
+  .swiper-container {
+    margin-bottom: 2rem; }
+    .swiper-container__bottom {
+      margin-top: 8rem; }
+  .section-title__word::after {
+    display: none; }
+  .swiper-main-img {
+    display: none; }
+  .swiper-mobile-img {
+    display: block;
+    width: 100%; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -873,6 +890,13 @@ img {
     display: none; }
   .title {
     font-size: 1.64rem; }
+  .col-50 {
+    width: 90%;
+    margin-top: -5rem; }
+  .swiper-container {
+    margin-bottom: 2rem; }
+  .section-title__word::after {
+    display: none; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
