@@ -99,5 +99,40 @@ $('.modal__form').validate({
 
 $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (__) ___-__-__"});
 
-})
+//Создание карты
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map', {
+          center: [53.098966, 49.967961],
+          zoom: 9
+      }, {
+          searchControlProvider: 'yandex#search'
+      }),
+
+      // Создаём макет содержимого.
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Тут творят чудеса',
+          balloonContent: 'А это дом волшебника'
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: 'img/marker.png',
+          // Размеры метки.
+          iconImageSize: [32, 32],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-5, -38]
+      });
+
+  myMap.geoObjects
+      .add(myPlacemark);
+      
+});
+
+});
 

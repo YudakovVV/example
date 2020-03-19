@@ -850,6 +850,69 @@ img {
     filter: brightness(0.7);
     background-color: rgba(19, 19, 19, 0.7); }
 
+.team {
+  padding-bottom: 30rem; }
+  .team__section-title {
+    margin-bottom: 2rem; }
+  .team__content {
+    position: relative;
+    max-width: 53.57rem;
+    margin: 0 auto; }
+  .team__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.42rem;
+    line-height: 131%;
+    font-weight: 100;
+    margin: 0;
+    margin-bottom: 3rem; }
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 28%; }
+
+.card {
+  position: relative; }
+  .card__text {
+    position: relative;
+    max-width: 23.6rem;
+    margin: 0 auto;
+    margin-top: -9.3rem;
+    padding: 1.79rem 2.14rem;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+  .card__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.29rem;
+    margin-top: 0;
+    margin-bottom: 0.7rem; }
+  .card__list {
+    padding: 0 0 0 1rem;
+    margin: 0;
+    font-size: 1.07rem;
+    line-height: 1.79rem;
+    color: #959595;
+    margin-bottom: 2.5rem; }
+  .card__pricetag {
+    position: absolute;
+    left: 0;
+    buttom: -1.79rem;
+    font-size: 1.29rem;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    background-color: #E3B873;
+    color: #fff;
+    padding: 1.214rem 2.6rem; }
+  .card__image-design {
+    filter: brightness(0.7);
+    background-color: rgba(19, 19, 19, 0.7); }
+
 .footer {
   background: #131313 url("../img/footer-bg.jpg") center no-repeat;
   background-size: cover;
@@ -895,6 +958,12 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    margin: auto;
+    margin-bottom: 5rem;
+    max-width: 940px;
+    min-height: 465px;
+    -webkit-filter: grayscale(100%); }
 
 #button {
   display: inline-block;

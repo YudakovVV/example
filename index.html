@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=54567bd7-2cab-41db-9bbc-ea885eac7643&lang=ru_RU" type="text/javascript">
+  </script>
   <title>Document</title>
 </head>
 <body>
@@ -429,6 +431,81 @@
       <!-- /.container -->
     </section>
     <!-- /.section design -->
+
+    <section class="section team">
+      <div class="container">
+        <div class="section-title team__section-title wow fadeInUp">
+          <h2 class="section-title__heading">Наша команда</h2>
+          <!-- /.section-title__heading -->          
+          <div class="section-title__image">
+            <img src="img/team/team.svg" alt="repaire">
+          </div>                    
+          <!-- /.section-title__image -->          
+        </div>
+        <div class="team__content">
+          <p class="team__text">
+            Наша команда помогла стать счастливее 
+            более чем 500 семьям, и мы не собираемся останавливаться
+          </p>          
+        </div>    
+        <div class="row">
+          <div class="col-30">
+            <div class="card team__card">
+              <img src="img/team/team-1.jpg" alt="Алексей Колмаков" class="card__image-team">
+              <div class="card__text">
+                <h3 class="card__title">Алексей Колмаков</h3>
+                <!-- /.card__title -->
+                <p class="card__list">
+                  Проектный менеджер
+                </p>
+                <!-- /.card__list -->
+                <strong class="card__pricetag">ОПыт работы 8 лет</strong>
+              </div>
+              <!-- /.card__text -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-30">
+            <div class="card team__card">
+              <img src="img/team/team-2.jpg" alt="Алиса Сухорукова" class="card__image-team">
+              <div class="card__text">
+                <h3 class="card__title">Алиса Сухорукова</h3>
+                <!-- /.card__title -->
+                <p class="card__list">
+                  Дизайнер
+                </p>
+                <!-- /.card__list -->
+                <strong class="card__pricetag">Опыт работы 6 лет</strong>
+              </div>
+              <!-- /.card__text -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-30">
+            <div class="card team__card">
+              <img src="img/team/team-3.jpg" alt="Давид Волынев" class="card__image-team">
+              <div class="card__text">
+                <h3 class="card__title">Давид Волынев</h3>
+                <!-- /.card__title -->
+                <p class="card__list">
+                  Бригадир
+                </p>
+                <!-- /.card__list -->
+                <strong class="card__pricetag">ОПыт работы 7 лет</strong>
+              </div>
+              <!-- /.card__text -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section team -->
   </main>
   <footer class="footer section--dark">
     <div class="container">
@@ -454,7 +531,10 @@
           </div>
           <button class="button button--primary footer__button">Отправить</button> <!-- /.button button--primary modal__button -->
         </form>
-      </div>      
+      </div>
+         <div class="map footer__map" id="map">
+          
+         </div>   
     </div>
     <!-- /.container -->
     <div class="footer__menu">
