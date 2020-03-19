@@ -361,7 +361,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.142rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -370,6 +371,8 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
 
 .container {
   width: 85%;
@@ -776,24 +779,24 @@ img {
   .modal__button {
     align-self: flex-end; }
 
-.design__section-title {
-  margin-bottom: 2rem; }
-
-.design__content {
-  position: relative;
-  max-width: 53.57rem;
-  margin: 0 auto; }
-
-.design__text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 1.42rem;
-  line-height: 131%;
-  font-weight: 100;
-  margin: 0;
-  margin-bottom: 3rem; }
+.design {
+  padding-bottom: 30rem; }
+  .design__section-title {
+    margin-bottom: 2rem; }
+  .design__content {
+    position: relative;
+    max-width: 53.57rem;
+    margin: 0 auto; }
+  .design__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.42rem;
+    line-height: 131%;
+    font-weight: 100;
+    margin: 0;
+    margin-bottom: 3rem; }
 
 .row {
   display: flex;
@@ -838,6 +841,52 @@ img {
   .card__image-design {
     filter: brightness(0.7);
     background-color: rgba(19, 19, 19, 0.7); }
+
+.footer {
+  background: #131313 url("../img/footer-bg.jpg") center no-repeat;
+  background-size: cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    background-color: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    margin-top: -20rem;
+    margin-bottom: 3.714rem;
+    padding: 2.5rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-bottom: 3.214rem;
+    margin-top: 0; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    padding-top: 0.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.2rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%;
+        margin-bottom: 2rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.6rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.285rem 4.785rem; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 4.285rem 0; }
 
 #button {
   display: inline-block;
@@ -996,7 +1045,23 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .footer {
+    background: #131313;
+    padding-top: 0; }
+    .footer__wrap {
+      background-color: #131313;
+      padding: 0;
+      padding-bottom: 2.5rem; }
+    .footer__button {
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      min-width: 22.86rem;
+      min-height: 3.64rem;
+      order: 2; }
+    .footer__input-group {
+      flex-basis: 100%; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
