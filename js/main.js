@@ -73,9 +73,14 @@ $('.modal__form').validate({
     // строчное правило
     userName: {
       required: true,
-      minlength: 2
+      minlength: 2,
+      maxlength: 15
     },
-    userPhone: "required",
+    userPhone: {
+      required: true,
+      minlength: 10,
+      phone: true
+    },
     // правило-объект
     userEmail: {
       required: true,
@@ -85,12 +90,85 @@ $('.modal__form').validate({
   messages: {
     userName: {
       required: "Имя обязательно",
-      minlength: "Имя не короче двух букв"
+      minlength: "Имя не короче двух букв",
+      maxlength: "Имя слишком длинное"
     },
-    userPhone: "Телефон обязателен",
+    userPhone: {
+      required: "Телефон обязателен",
+      phone: "Введите в формате +7 (000) 000-00-00",
+      minlength: "Не правильно введен телефон, введите в формате +7 (000) 000-00-00"
+    },
     userEmail: {
       required: "Обязательно укажите Email",
       email: "Введите в формате name@domain.com"
+    }
+  }
+});
+
+$('.footer__form').validate({
+  errorClass: "invalid",
+  rules: {
+    // строчное правило
+    userName: {
+      required: true,
+      minlength: 2,
+      maxlength: 15
+    },
+    userPhone: {
+      required: true,
+      minlength: 10,
+      phone: true
+    },
+    // правило-объект
+    userQuestions: {
+      required: true,
+      questions: true
+    }
+  }, //сообщения
+  messages: {
+    userName: {
+      required: "Имя обязательно",
+      minlength: "Имя не короче двух букв",
+      maxlength: "Имя слишком длинное"
+    },
+    userPhone: {
+      required: "Телефон обязателен",
+      phone: "Введите в формате +7 (000) 000-00-00",
+      minlength: "Не правильно введен телефон, введите в формате +7 (000) 000-00-00"
+    },
+    userQuestions: {
+      required: "Обязательно укажите свой вопрос"
+      
+    }
+  }
+});
+
+$('.control__form').validate({
+  errorClass: "invalid",
+  rules: {
+    // строчное правило
+    userName: {
+      required: true,
+      minlength: 2,
+      maxlength: 15
+    },
+    userPhone: {
+      required: true,
+      minlength: 10,
+      phone: true
+    }
+
+  }, //сообщения
+  messages: {
+    userName: {
+      required: "Имя обязательно",
+      minlength: "Имя не короче двух букв",
+      maxlength: "Имя слишком длинное"
+    },
+    userPhone: {
+      required: "Телефон обязателен",
+      phone: "Введите в формате +7 (000) 000-00-00",
+      minlength: "Не правильно введен телефон, введите в формате +7 (000) 000-00-00"
     }
   }
 });
@@ -121,14 +199,14 @@ ymaps.ready(function () {
           // Необходимо указать данный тип макета.
           iconLayout: 'default#image',
           // Своё изображение иконки метки.
-          iconImageHref: 'img/marker.png',
+          iconImageHref: 'img/3.jpg',
           // Размеры метки.
           iconImageSize: [32, 32],
           // Смещение левого верхнего угла иконки относительно
           // её "ножки" (точки привязки).
           iconImageOffset: [-5, -38]
       });
-
+  myMap.behaviors.disable('scrollZoom');
   myMap.geoObjects
       .add(myPlacemark);
       

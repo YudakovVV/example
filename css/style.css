@@ -676,6 +676,9 @@ img {
   max-width: 55rem;
   margin: auto; }
 
+.control__input {
+  color: #131313; }
+
 .control__input-group {
   display: flex;
   flex-direction: column;
@@ -868,6 +871,26 @@ img {
     font-weight: 100;
     margin: 0;
     margin-bottom: 3rem; }
+  .team__card {
+    max-width: 19.42rem; }
+    .team__card__text {
+      position: relative;
+      max-width: 16.64rem;
+      margin: 0 auto;
+      margin-top: -9.3rem;
+      padding: 1.79rem 2.14rem;
+      background-color: #fff;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+    .team__card__pricetag {
+      position: absolute;
+      left: 0;
+      buttom: -1.79rem;
+      font-size: 0.91rem;
+      font-family: 'Yeseva One', cursive;
+      text-transform: uppercase;
+      background-color: #E3B873;
+      color: #fff;
+      padding: 1.214rem 2.6rem; }
 
 .row {
   display: flex;
@@ -879,14 +902,6 @@ img {
 
 .card {
   position: relative; }
-  .card__text {
-    position: relative;
-    max-width: 23.6rem;
-    margin: 0 auto;
-    margin-top: -9.3rem;
-    padding: 1.79rem 2.14rem;
-    background-color: #fff;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
   .card__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.29rem;
@@ -899,16 +914,6 @@ img {
     line-height: 1.79rem;
     color: #959595;
     margin-bottom: 2.5rem; }
-  .card__pricetag {
-    position: absolute;
-    left: 0;
-    buttom: -1.79rem;
-    font-size: 1.29rem;
-    font-family: 'Yeseva One', cursive;
-    text-transform: uppercase;
-    background-color: #E3B873;
-    color: #fff;
-    padding: 1.214rem 2.6rem; }
   .card__image-design {
     filter: brightness(0.7);
     background-color: rgba(19, 19, 19, 0.7); }
@@ -964,6 +969,28 @@ img {
     max-width: 940px;
     min-height: 465px;
     -webkit-filter: grayscale(100%); }
+  .footer__addres__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E3B873;
+    font-size: 1.428rem;
+    line-height: 2rem;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase;
+    max-width: 42rem;
+    min-height: 3.642rem;
+    margin: auto; }
+  .footer__addres__icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 7rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
 
 #button {
   display: inline-block;
